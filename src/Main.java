@@ -1,6 +1,12 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+
+        StringUtil tester = new StringUtil(args);
+
+        tester.printInSmallLetters();
+
+
+
     }
 }
