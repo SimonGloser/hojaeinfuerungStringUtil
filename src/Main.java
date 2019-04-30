@@ -6,6 +6,7 @@ public class Main {
 
         tester.printInSmallLetters();
         tester.printViseVersa();
+        tester.printWordsInLines();
 
 
 

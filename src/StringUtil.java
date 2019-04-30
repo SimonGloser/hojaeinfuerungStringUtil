@@ -20,6 +20,7 @@ public class StringUtil {
             System.out.println("Wort in Kleinbuchstaben: " + this.words[i].toLowerCase());
         }
     }
+
     public void printViseVersa(){
         this.printLines();
         System.out.println("Eingabe in umgekehrter Reihenfolge:");
@@ -27,6 +28,22 @@ public class StringUtil {
 
             System.out.print(this.words[i] + " ");
         }
+    }
+    public void printWordsInLines(){
+
+        this.printLines();
+
+            for (int i = 0; i < 2; i++){
+
+                for (String word : this.words) {
+
+                    System.out.println("Der Buchstabe an Stelle : " + (i+1)  + " ist "+ word.charAt(i));
+                }
+                this.printLines();
+            }
+
+
+
     }
     private void printLines(){
         System.out.println("-------------------");
