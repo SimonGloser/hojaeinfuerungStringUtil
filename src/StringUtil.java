@@ -15,9 +15,20 @@ public class StringUtil {
     }
 
     public void printInSmallLetters(){
-        System.out.println("-------------------");
+        this.printLines();
         for (int i = 0; i < this.words.length; i++) {
             System.out.println("Wort in Kleinbuchstaben: " + this.words[i].toLowerCase());
         }
+    }
+    public void printViseVersa(){
+        this.printLines();
+        System.out.println("Eingabe in umgekehrter Reihenfolge:");
+        for (int i = this.words.length - 1; i >= 0; i--) {
+
+            System.out.print(this.words[i] + " ");
+        }
+    }
+    private void printLines(){
+        System.out.println("-------------------");
     }
 }

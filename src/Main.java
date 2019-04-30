@@ -5,6 +5,9 @@ public class Main {
         StringUtil tester = new StringUtil(args);
 
         tester.printInSmallLetters();
+        tester.printViseVersa();
+
+
 
 
 
